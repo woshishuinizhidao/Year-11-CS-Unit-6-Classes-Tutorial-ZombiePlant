@@ -26,10 +26,10 @@ public class ZombiePlant {
 
     public void treat(int treat) {
         this.treat = treat;
-        if(treat<=maxPotency){
+        if(treat<=maxPotency && treat>0){
             successfulTreatment=successfulTreatment-1;
         }
-        if(treat>maxPotency){
+        if(treat>maxPotency && treat>0){
             successfulTreatment=successfulTreatment+1;
         }
     }
